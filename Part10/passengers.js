@@ -18,4 +18,4 @@ function checkNoPaid(passenger) {
         return true
     }
     return true
-}
+} 
