@@ -3,8 +3,8 @@ var passengers =
     { name: "Dr. Evel", paid: true },
     { name: "Sue Property", paid: false },
     { name: "John Funcall", paid: true },
-    { name: "Maxim Klimovich", paid: false},
-    { name: "Alexander Tarasov", paid: false}];
+    { name: "Maxim Klimovich", paid: false },
+    { name: "Alexander Tarasov", paid: false }];
 
 function chekNoflyList(passenger) {
     return ("Dr. Evel" === passenger.name)
@@ -18,13 +18,13 @@ function processPassengers(passengers, testFunction) {
     for (let i = 0; i < passengers.length; i++) {
         if (testFunction(passengers[i])) {
             return false
-        }  
+        }
     }
     return true
 }
 
-function printPassenger(passenger){
-    console.log("Name: "+ passenger.name + "\nPaid: " + passenger.paid)
+function printPassenger(passenger) {
+    console.log("Name: " + passenger.name + "\nPaid: " + passenger.paid)
 }
 
 var allCanFly = processPassengers(passengers, chekNoflyList)
