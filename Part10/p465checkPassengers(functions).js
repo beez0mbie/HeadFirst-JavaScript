@@ -4,7 +4,8 @@ var passengers =
     { name: "Sue Property", paid: false, ticket: "firstclass" },
     { name: "John Funcall", paid: true, ticket: "coach" },
     { name: "Maxim Klimovich", paid: false, ticket: "bestCoach" },
-    { name: "Alexander Tarasov", paid: false, ticket: "coach" }];
+    { name: "Alexander Tarasov", paid: false, ticket: "coach" }
+];
 
 function chekNoflyList(passenger) {
     return ("Dr. Evel" === passenger.name)
