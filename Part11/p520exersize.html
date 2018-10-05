@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        //Exersize 1
+        console.log('Exersize 1\n Compare password:\n')
+        function makePassword(password) {
+            return function comparePassword(passwordGuess){
+                return (passwordGuess === password);
+            }
+        }
+        var login = makePassword('secret')
+        console.log(login('ass'))
+        console.log(login('cock'))
+        console.log(login('secret'))
+        
+        //Exersize 2
+        console.log('Exersize 2\n Multiplication:\n')
+        function multN(n) {
+            return function multM(m) {
+                return (n * m);
+            }
+        }
+        var multBy3 = multN(3)
+        console.log("Multiplying 2: " + multBy3(2))
+        console.log("Multiplying 3: " + multBy3(3))
+        
+        //Exersize 3
+        console.log('Exersize 3\n New Counter:\n')
+        function makeCount(){
+            var count = 0
+            return {
+                increment: function(){
+                    count++
+                    return count
+                }
+            };
+        }
+        var doCount = makeCount()
+        console.log(doCount.increment())
+        console.log(doCount.increment())
+        console.log(doCount.increment())
+        
+        var doCountAgain = makeCount()
+        console.log(doCountAgain.increment())
+        console.log(doCountAgain.increment())
+        console.log(doCountAgain.increment())
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
