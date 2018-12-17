@@ -29,12 +29,13 @@
         console.log("Multiplying 2: " + multBy3(2))
         console.log("Multiplying 3: " + multBy3(3))
         
-        //Exersize 3
+        //Exersize 3 разновидность счетчика, 
+        //созданного ранее в этой главе. Функция makeCounter не получает аргументов, но определяет переменную count.
         console.log('Exersize 3\n New Counter:\n')
         function makeCount(){
             var count = 0
-            return {
-                increment: function(){
+            return {                    //Затем она создает и возвращает объект с единственным методом increment. 
+                increment: function(){  //Этот метод увеличивает переменную count и возвращает ее.
                     count++
                     return count
                 }
