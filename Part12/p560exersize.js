@@ -53,3 +53,7 @@ var limoDog = new Dog("Rhapsody In Blue", "Poodle", 40);
 
 console.log(limo.make + " " + limo.model + " is a " + typeof limo);
 console.log(limoDog.name + " is a " + typeof limoDog);
+
+if (limo instanceof Car) {
+    console.log("Congrats, it's a Car!");
+    };
