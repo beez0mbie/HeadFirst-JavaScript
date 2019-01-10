@@ -4,16 +4,16 @@ function Coffee(roast, ounces) {
 
     this.getSize = function(){
         if(this.ounces <= 8){
-            return('small')
+            return('small');
         } else if(8 < this.ounces && this.ounces <= 12){
-            return('medium')
+            return('medium');
         } else {
-            return('large')
+            return('large');
         }
-    }
+    };
     this.toString = function(){
        return('You`ve ordered a ' + this.getSize() + ' ' + this.roast + ' coffee');
-    }
+    };
 }
 
 var houseBlend = new Coffee('House Blend', 12);
